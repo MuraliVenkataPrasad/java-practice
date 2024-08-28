@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class withoutifelsegreatest {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=10,b=20,c=30;
+		//int d=(a>b)?((a>c)?a:c):((b>c)?b:c);
+		System.out.print((a>b)?((a>c)?"a is max":"c is max"):((b>c)?"b is max":"c is max"));
+		//System.out.println(d);
+	}
+	
+
+}
