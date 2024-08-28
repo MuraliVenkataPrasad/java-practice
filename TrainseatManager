@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class TrainSeatMnager {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the seat number (1 to 78):");
+        int n = scanner.nextInt(); // Read seat number from user input
+
+        if (n <= 72) {
+            // Calculate the position within the room (1 to 8)
+            n = n % 8;
+            
+            // Determine seat type using switch statement
+            switch (n) {
+                case 1:
+                case 4:
+                    System.out.println("Lower Berth");
+                    break;
+                case 2:
+                case 5:
+                    System.out.println("Middle Berth");
+                    break;
+                case 3:
+                case 6:
+                    System.out.println("Upper Berth");
+                    break;
+                case 7:
+                    System.out.println("Side Upper Berth");
+                    break;
+                case 0: // If n % 8 is 0, it corresponds to position 8
+                    System.out.println("Side Lower Berth");
+                    break;
+                default:
+                    System.out.println("Unknown Position"); // This case should not occur
+                    break;
+            }
+        } else {
+            System.out.println("No seats available for seat number " + n);
+        }
+
+        scanner.close(); // Close the scanner
+    }
+}
