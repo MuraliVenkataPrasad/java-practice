@@ -1,0 +1,8 @@
+public class Quotelength {
+	public static void main(String[] args) {
+		String Quote="i am the student in k sr college;";
+		System.out.println(Quote.length());
+		
+	}
+
+}
