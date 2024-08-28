@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class a1b2c333 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char a='A';
+		char b='b';
+		int sachin=a;
+		int sabare=b;
+		System.out.println(sachin+" "+sabare);
+	}
+
+}
+
+
+output;
+65 98
